@@ -1,0 +1,1 @@
+This is a simple pyqt software . where user stored some data and those will be displayed in table.

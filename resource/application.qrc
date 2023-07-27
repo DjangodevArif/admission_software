@@ -1,0 +1,7 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/my_proj">
+        <file>dark/demo.qss</file>
+        <file>light/demo.qss</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="CaptionLabel" name="name_label">
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="LineEdit" name="name_input"/>
+        </item>
+        <item>
+         <widget class="CaptionLabel" name="father_label">
+          <property name="text">
+           <string>Father's name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="LineEdit" name="father_name_input"/>
+        </item>
+        <item>
+         <widget class="CaptionLabel" name="mother_label">
+          <property name="text">
+           <string>Mother's name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="LineEdit" name="mother_name_input"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QWidget" name="image_widget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1000</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="image_preview">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="PrimaryPushButton" name="insert_image">
+           <property name="text">
+            <string>Insert image</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="BodyLabel" name="present_address_label">
+        <property name="text">
+         <string>Present address</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="LineEdit" name="present_address_input"/>
+      </item>
+      <item>
+       <widget class="BodyLabel" name="permanent_address_label">
+        <property name="text">
+         <string>Permanent address</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="LineEdit" name="permanent_address_input"/>
+      </item>
+      <item>
+       <widget class="BodyLabel" name="description_label">
+        <property name="text">
+         <string>Description</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="TextEdit" name="description_input">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>170</height>
+         </size>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhMultiLine</set>
+        </property>
+        <property name="tabStopWidth">
+         <number>40</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PrimaryPushButton" name="submit_btn">
+        <property name="text">
+         <string>Submit information</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PrimaryPushButton</class>
+   <extends>PushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>CaptionLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
