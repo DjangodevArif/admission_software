@@ -35,7 +35,7 @@ class AvatarWidget(NavigationWidget):
 
     def __init__(self, parent=None):
         super().__init__(isSelectable=False, parent=parent)
-        self.avatar = QImage('resource/shoko.png').scaled(
+        self.avatar = QImage('resource/profile-logo.png').scaled(
             24, 24, Qt.KeepAspectRatio, Qt.SmoothTransformation)
 
     def paintEvent(self, e):
@@ -180,8 +180,8 @@ class Window(FramelessWindow):
 
     def initWindow(self):
         self.resize(900, 700)
-        self.setWindowIcon(QIcon('resource/logo.png'))
-        self.setWindowTitle('PyQt-Fluent-Widgets')
+        self.setWindowIcon(QIcon('resource/admission-logo.jpg'))
+        self.setWindowTitle('Admission App')
         self.titleBar.setAttribute(Qt.WA_StyledBackground)
 
         desktop = QApplication.desktop().availableGeometry()
